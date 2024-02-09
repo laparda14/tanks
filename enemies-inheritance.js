@@ -38,7 +38,7 @@ function inherit(childObject, parentObject) {
 function BrownTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 100,
+		maxBullets: 10,
 		rotDelay: 800,
 		bulletDelayReqired: 0,
 		gameObjType: "BROWN TANK",
@@ -89,7 +89,7 @@ BrownTank.prototype.act = function () {
 function GrayTank (id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 200,
+		maxBullets: 10,
 		rotDelay: 800,
 		gameObjType: "GRAY TANK",
 		spriteBodyName: "graytankbody",
@@ -188,7 +188,7 @@ GrayTank.prototype.explore = function () {
 function TealTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 100,
+		maxBullets: 10,
 		rotDelay: 800,
 		bulletDelayRequired: 0,
 		gameObjType: "TEAL TANK",
@@ -350,7 +350,7 @@ TealTank.prototype.act = function () {
 function BlueTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 100,
+		maxBullets: 10,
 		rotDelay: 600,
 		bulletDelayRequired: 5,
 		gameObjType: "BLUE TANK",
@@ -490,7 +490,7 @@ BlueTank.prototype.act = function () {
 function GreenTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 200,
+		maxBullets: 10,
 		rotDelay: 700,
 		bulletDelayReqired: 0,
 		gameObjType: "GREEN TANK",
@@ -541,7 +541,7 @@ GreenTank.prototype.act = function () {
 function CircleTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 300,
+		maxBullets: 10,
 		rotDelay: 600,
 		bulletDelayRequired: 0,
 		gameObjType: "CIRCLE TANK",

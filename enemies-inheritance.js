@@ -38,7 +38,7 @@ function inherit(childObject, parentObject) {
 function BrownTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 1,
+		maxBullets: 100,
 		rotDelay: 800,
 		bulletDelayReqired: 0,
 		gameObjType: "BROWN TANK",
@@ -78,7 +78,7 @@ BrownTank.prototype.act = function () {
 			x: this.heart.x,
 			y: this.heart.y,
 			rot: this.head.rotation,
-			numBounces: 1,
+			numBounces: 10,
 			speed: SLOW_BULLET_SPEED
 		}
 		fire(params, this);
@@ -89,7 +89,7 @@ BrownTank.prototype.act = function () {
 function GrayTank (id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 2,
+		maxBullets: 200,
 		rotDelay: 800,
 		gameObjType: "GRAY TANK",
 		spriteBodyName: "graytankbody",
@@ -133,7 +133,7 @@ GrayTank.prototype.act = function () {
 			x: this.heart.x,
 			y: this.heart.y,
 			rot: this.head.rotation,
-			numBounces: 1,
+			numBounces: 10,
 			speed: SLOW_BULLET_SPEED
 		}
 		fire(params, this);
@@ -188,7 +188,7 @@ GrayTank.prototype.explore = function () {
 function TealTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 1,
+		maxBullets: 100,
 		rotDelay: 800,
 		bulletDelayRequired: 8,
 		gameObjType: "TEAL TANK",
@@ -338,7 +338,7 @@ TealTank.prototype.act = function () {
 			x: this.heart.x,
 			y: this.heart.y,
 			rot: this.head.rotation,
-			numBounces: 0,
+			numBounces: 10,
 			speed: FAST_BULLET_SPEED
 		}
 		fire(params, this);
@@ -350,7 +350,7 @@ TealTank.prototype.act = function () {
 function BlueTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 1,
+		maxBullets: 100,
 		rotDelay: 600,
 		bulletDelayRequired: 5,
 		gameObjType: "BLUE TANK",
@@ -478,7 +478,7 @@ BlueTank.prototype.act = function () {
 			x: this.heart.x,
 			y: this.heart.y,
 			rot: this.head.rotation,
-			numBounces: 1,
+			numBounces: 10,
 			speed: SLOW_BULLET_SPEED
 		}
 		fire(params, this);
@@ -490,7 +490,7 @@ BlueTank.prototype.act = function () {
 function GreenTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 2,
+		maxBullets: 200,
 		rotDelay: 700,
 		bulletDelayReqired: 5,
 		gameObjType: "GREEN TANK",
@@ -529,7 +529,7 @@ GreenTank.prototype.act = function () {
 			x: this.heart.x,
 			y: this.heart.y,
 			rot: this.head.rotation,
-			numBounces: 3,
+			numBounces: 10,
 			speed: FAST_BULLET_SPEED + 30
 		}
 		fire(params, this);
@@ -541,7 +541,7 @@ GreenTank.prototype.act = function () {
 function CircleTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 3,
+		maxBullets: 300,
 		rotDelay: 600,
 		bulletDelayRequired: 1,
 		gameObjType: "CIRCLE TANK",
@@ -643,7 +643,7 @@ CircleTank.prototype.act = function () {
 			x: this.heart.x,
 			y: this.heart.y,
 			rot: this.head.rotation,
-			numBounces: 1,
+			numBounces: 10,
 			speed: SLOW_BULLET_SPEED
 		}
 		fire(params, this);

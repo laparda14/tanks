@@ -94,7 +94,7 @@ function GrayTank (id, game, x, y) {
 		gameObjType: "GRAY TANK",
 		spriteBodyName: "graytankbody",
 		spriteHeadName: "graytankhead",
-		bulletDelayRequired: 6
+		bulletDelayRequired: 0
 	};
 	this.patrols = true;
 	this.direction = getRandomRotation();
@@ -190,7 +190,7 @@ function TealTank(id, game, x, y) {
 		x: x, y: y, id: id,
 		maxBullets: 100,
 		rotDelay: 800,
-		bulletDelayRequired: 8,
+		bulletDelayRequired: 0,
 		gameObjType: "TEAL TANK",
 		spriteBodyName: "tealtankbody",
 		spriteHeadName: "tealtankhead"
@@ -492,7 +492,7 @@ function GreenTank(id, game, x, y) {
 		x: x, y: y, id: id,
 		maxBullets: 200,
 		rotDelay: 700,
-		bulletDelayReqired: 5,
+		bulletDelayReqired: 0,
 		gameObjType: "GREEN TANK",
 		spriteBodyName: "greentankbody",
 		spriteHeadName: "greentankhead"
@@ -543,7 +543,7 @@ function CircleTank(id, game, x, y) {
 		x: x, y: y, id: id,
 		maxBullets: 300,
 		rotDelay: 600,
-		bulletDelayRequired: 1,
+		bulletDelayRequired: 0,
 		gameObjType: "CIRCLE TANK",
 		spriteBodyName: "circletankbody",
 		spriteHeadName: "circletankhead"

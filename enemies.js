@@ -15,7 +15,7 @@ function BrownTank (id, game, x, y) {
 	this.goalRot = 0;
 	this.numBullets = 0;
 	this.maxBullets = 100;
-	this.rotDelay = 800;
+	this.rotDelay = 100;
 	this.dead = false;
 
 
@@ -36,7 +36,7 @@ function BrownTank (id, game, x, y) {
 				x: this.heart.x,
 				y: this.heart.y,
 				rot: this.head.rotation,
-				numBounces: 1,
+				numBounces: 10,
 				speed: SLOW_BULLET_SPEED
 			}
 			fire(params, this, true);

@@ -14,7 +14,7 @@ function BrownTank (id, game, x, y) {
 	this.dir = 0.5;
 	this.goalRot = 0;
 	this.numBullets = 0;
-	this.maxBullets = 1;
+	this.maxBullets = 100;
 	this.rotDelay = 800;
 	this.dead = false;
 
@@ -70,7 +70,7 @@ function GrayTank (id, game, x, y) {
 	this.patrols = true;
 	this.goalRot = 0;
 	this.numBullets = 0;
-	this.maxBullets = 2;
+	this.maxBullets = 200;
 	this.seePlayer = false;
 	this.direction = getRandomRotation();
 	this.movSpeed = 50;
@@ -170,7 +170,7 @@ function TealTank (id, game, x, y) {
 	this.patrols = true;
 	this.goalRot = 0;
 	this.numBullets = 0;
-	this.maxBullets = 1;
+	this.maxBullets = 10;
 	this.seePlayer = false;
 	this.direction = getRandomRotation();
 	this.movSpeed = 60;
@@ -298,12 +298,12 @@ function CircleTank (id, game, x, y) {
 
 	this.patrols = true;
 	this.numBullets = 0;
-	this.maxBullets = 1;
+	this.maxBullets = 100;
 	this.seePlayer = false;
 	this.direction = getRandomRotation();
 	this.movSpeed = 100;
 	this.rotDelay = 100;
-	this.bulletDelay = 10;
+	this.bulletDelay = 5;
 	this.bulletDelayRequirement = 12;
 	this.wayPoints = [];
 

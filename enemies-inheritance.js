@@ -541,7 +541,7 @@ GreenTank.prototype.act = function () {
 function CircleTank(id, game, x, y) {
 	var settings = {
 		x: x, y: y, id: id,
-		maxBullets: 10,
+		maxBullets: 5,
 		rotDelay: 600,
 		bulletDelayRequired: 0,
 		gameObjType: "CIRCLE TANK",
